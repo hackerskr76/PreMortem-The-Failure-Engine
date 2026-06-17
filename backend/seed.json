@@ -1,0 +1,332 @@
+[
+  {
+    "title": "ZetaDrive: Autonomous Urban Last-Mile Delivery Drones",
+    "domain": "Tech",
+    "description": "An autonomous drone fleet designed to deliver small packages in high-density urban environments",
+    "root_cause": "Lithium-ion battery efficiency dropped by 45% during winter temperatures",
+    "lessons_learned": "Environmental limits must be simulated early. Regulatory compliance",
+    "time_cost_months": 18,
+    "financial_cost_usd": 2400000.00,
+    "tags": ["Hardware", "Drones", "Logistics", "Regulation", "Battery"]
+  },
+  {
+    "title": "Theranos",
+    "domain": "Biotechnology",
+    "description": "A privately held company that claimed it could revolutionize blood testing by performing multiple complex tests using only a single drop of blood, collected via a tiny finger-prick.",
+    "root_cause": "The company's proprietary Edison machine was fundamentally flawed and could not deliver accurate or reliable results. Leadership used deliberate fraud, deception, and intimidation against employees to hide the technology's shortcomings from investors and the public.",
+    "lessons_learned": "'Fake it till you make' it does not apply to healthcare, where patient safety is at stake. Companies must embrace technical peer review, respect employee warnings, and avoid suppressing internal dissenting experts",
+    "time_cost_months": 180,
+    "financial_cost_usd": 700000000.00,
+    "tags": ["HealthTech", "Fraud", "Mismanagement", "Corporate", "Governance"]
+    },
+    {
+        "title": "Healthcare.gov Rollout",
+        "domain": "Government IT",
+        "description": "The U.S. federal government's centralized health insurance exchange website, created to facilitate enrollment in the Affordable Care Act (ACA).",
+        "root_cause": "A combination of a rushed launch timeline, constantly changing policy requirements, and a failure to enforce rigorous end-to-end integration testing. The Centers for Medicare and Medicaid Services (CMS) also lacked experience acting as the lead systems integrator for a massive network of 15 different contractors.",
+        "lessons_learned": "Scope lock-down and iterative beta-testing are mandatory for complex systems. A single point of truth and a dedicated, experienced project management office must be established to catch integrated component failures early.",
+        "time_cost_months": 36,
+        "financial_cost_usd":2000000000.00,
+        "tags":["Government", "Scope Creep", "System Integration", "Project Management"]
+    },
+    {
+    "title": "Quibi",
+    "domain": "Tech Startups",
+    "description": "A short-form streaming platform dedicated to producing and distributing premium, high-budget, 'quick bite' episodes (mostly under 10 minutes) designed specifically for mobile viewing.",
+    "root_cause": "Quibi miscalculated consumer habits, wrongly assuming people wanted to watch highly produced, paid TV shows in brief pockets of downtime. They faced a fierce two-front market squeeze: traditional streamers provided better binge-watching, while platforms like TikTok and YouTube provided superior bite-sized entertainment for free.",
+    "lessons_learned": "Thorough market research must precede massive capital expenditure. New market categories should have an undeniably distinct value proposition rather than relying merely on high-profile celebrity power.",
+    "time_cost_months": 9,
+    "financial_cost_usd": 1750000000.00,
+    "tags": ["Entertainment", "Mobile-Streaming", "Market-Misalignment", "Consumer-Behavior"]
+  },
+  {
+    "title": "Mars Climate Orbiter",
+    "domain": "Academia",
+    "description": "A robotic space probe launched by NASA intended to study the Martian climate, atmosphere, and surface changes, and act as a communications relay.",
+    "root_cause": "A critical breakdown in systems engineering communication and project management. The software used by the primary contractor (Lockheed Martin) outputted acceleration data in Imperial units (pound-seconds), while the NASA Jet Propulsion Laboratory navigation software expected values in metric units (newton-seconds).",
+    "lessons_learned": "Technical organizations must rigidly enforce standard measurement and documentation requirements. Furthermore, robust software verification processes, system reviews, and cross-team communication are required to catch preventable calculation errors during flight.",
+    "time_cost_months": 21,
+    "financial_cost_usd": 327600000.00,
+    "tags": ["Aerospace", "Measurement-Error", "Systems-Engineering", "Communication"]
+  },
+  {
+    "title": "Knight Capital Group Trading Glitch",
+    "domain": "Tech Startups",
+    "description": "An automated market-making firm deployed a new software update that triggered an unintended loop, executing millions of erroneous stock trades in minutes.",
+    "root_cause": "Engineers reused a legacy flag in the codebase to activate new functionality but failed to deploy the updated code to one of the eight live production servers. The un-updated server interpreted the new orders using old, obsolete logic, creating an unmonitored loop that bought high and sold low repeatedly.",
+    "lessons_learned": "Dead code must be systematically removed from production repositories. Automated deployment pipelines must strictly enforce environmental parity, and real-time kill switches are mandatory for high-frequency trading applications.",
+    "time_cost_months": 1,
+    "financial_cost_usd": 440000000.00,
+    "tags": ["DevOps", "Software-Engineering", "FinTech", "Automation-Failure"]
+  },
+  {
+    "title": "The Concorde SST",
+    "domain": "Public Policy",
+    "description": "A joint British-French government initiative to develop a commercial supersonic passenger airliner capable of crossing the Atlantic in under 3.5 hours.",
+    "root_cause": "The project fell victim to severe escalating technical complexities, high fuel consumption, massive sonic booms that limited flight paths over land, and immense maintenance overhead. It became a classic 'sunk cost fallacy' where both nations kept funding a commercially unviable machine for political prestige.",
+    "lessons_learned": "Governments must avoid the sunk cost fallacy by establishing strict, independent economic off-ramps for technical projects. Technical breakthroughs must align with environmental regulations and operational realities to achieve mass market viability.",
+    "time_cost_months": 324,
+    "financial_cost_usd": 2300000000.00,
+    "tags": ["Aerospace", "Sunk-Cost", "Government-Subsidy", "Infrastructure"]
+  },
+  {
+    "title": "Ariane 5 Flight 501",
+    "domain": "Academia",
+    "description": "The maiden flight of the European Space Agency's Ariane 5 rocket, which self-destructed 37 seconds after launch during scientific payload deployment.",
+    "root_cause": "Software code from the older Ariane 4 rocket was reused without being re-tested for the new flight path parameters. A 64-bit floating-point value tracking horizontal velocity was converted into a 16-bit signed integer, causing an arithmetic overflow that crashed the guidance system and triggered self-destruction.",
+    "lessons_learned": "Software code cannot be blindly reused across different hardware iterations without full integration testing. Exception handling routines must explicitly cover variable overflow vulnerabilities in mission-critical systems.",
+    "time_cost_months": 120,
+    "financial_cost_usd": 370000000.00,
+    "tags": ["Software-Bug", "Aerospace", "Scientific-Research", "Integration-Testing"]
+  },
+  {
+    "title": "Samsung Galaxy Note 7 Battery Fires",
+    "domain": "Tech Startups",
+    "description": "The rapid global recall and permanent discontinuation of a flagship smartphone model following widespread reports of devices overheating and exploding.",
+    "root_cause": "Aggressive, rushed hardware design cycles squeezed the battery into an excessively tight phone chassis. This caused the upper corners of the battery cells to deflect, thin separators to puncture, and negative electrodes to short-circuit, resulting in thermal runaway.",
+    "lessons_learned": "Physical space margins and structural tolerances inside compact consumer electronics must never be sacrificed for aesthetic thinness or rushing a launch timeline.",
+    "time_cost_months": 3,
+    "financial_cost_usd": 5300000000.00,
+    "tags": ["Hardware-Design", "Consumer-Electronics", "Quality-Assurance", "Thermal-Runaway"]
+  },
+  {
+    "title": "Tacoma Narrows Bridge",
+    "domain": "Public Policy",
+    "description": "A federally and state-funded suspension bridge in Washington State that collapsed into Puget Sound just four months after opening to the public.",
+    "root_cause": "Civil engineers utilized a narrow, light design with solid steel plate girders instead of open lattice trusses. This caused aerodynamic instability, which generated severe aeroelastic flutter under moderate winds that tore the suspension cables apart.",
+    "lessons_learned": "Dynamic forces like wind and aeroelasticity must be fully modeled using wind tunnels rather than relying solely on static load calculations in structural engineering.",
+    "time_cost_months": 19,
+    "financial_cost_usd": 6400000.00,
+    "tags": ["Civil-Engineering", "Infrastructure", "Aerodynamics", "Structural-Failure"]
+  },
+  {
+    "title": "Therac-25 Radiation Overdoses",
+    "domain": "Academia",
+    "description": "A computer-controlled radiation therapy machine that severely overdosed and killed multiple cancer patients during academic hospital trials and clinical use.",
+    "root_cause": "The manufacturer removed physical, electromechanical safety interlocks, relying entirely on software safety. A subtle race condition software bug occurred when fast typists entered commands, causing the high-energy electron beam to fire directly without the necessary beam-softening target in place.",
+    "lessons_learned": "Critical safety systems must always feature physical, hardware-based interlocks. Software should never be trusted as the sole point of failure for human life, and concurrent software engineering must be rigorously audited for race conditions.",
+    "time_cost_months": 36,
+    "financial_cost_usd": 15000000.00,
+    "tags": ["Medical-Devices", "Race-Condition", "Software-Safety", "Bioengineering"]
+  },
+  {
+    "title": "Vasa Warship Sinking",
+    "domain": "Public Policy",
+    "description": "The sinking of a highly anticipated, heavily armed Swedish flagship vessel in Stockholm harbor during its highly publicized maiden voyage.",
+    "root_cause": "The ship was built with an unstable hull geometry because King Gustavus Adolphus ordered an extra deck of heavy bronze cannons late in construction. The shipwrights lacked formal mathematical formulas for stability, relying on primitive rule-of-thumb measurements that failed to account for the severely raised center of gravity.",
+    "lessons_learned": "Scope creep driven by non-technical leadership must be rejected if it violates physical constraints. Standardized, scientifically verifiable testing procedures are required before putting complex engineering assets into operation.",
+    "time_cost_months": 30,
+    "financial_cost_usd": 40000000.00,
+    "tags": ["Maritime-Engineering", "Scope-Creep", "Structural-Instability", "Historical"]
+  },
+  {
+    "title": "The Great Boston Molasses Flood",
+    "domain": "Tech Startups",
+    "description": "The catastrophic failure of a massive, 50-foot-tall industrial fermentation tank that released 2.3 million gallons of molasses across a city neighborhood.",
+    "root_cause": "The Purity Distilling Company rushed construction without an engineer's oversight and ignored structural warning signs like persistent leaking. The steel tank walls were engineered to be too thin, and the manganese content in the steel was too low, making the metal highly brittle and prone to structural failure in cold weather.",
+    "lessons_learned": "Industrial storage and chemical infrastructure must adhere to rigid safety margins, material certification steps, and mandatory structural inspections. Corporate speed must never override baseline civil safety guidelines.",
+    "time_cost_months": 36,
+    "financial_cost_usd": 30000000.00,
+    "tags": ["Metallurgy", "Industrial-Safety", "Structural-Failure", "Chemical-Engineering"]
+  },
+  {
+    "title": "The R101 Airship Crash",
+    "domain": "Academia",
+    "description": "A British government-backed scientific research initiative to build an empire-spanning luxury commercial airship fleet, which crashed on its maiden overseas voyage.",
+    "root_cause": "The airship was extended in length to increase lift, which compromised its structural rigidity. The outer fabric cover was treated with a highly flammable chemical compound that degraded over time, and the vessel flew into a severe storm with untested gas valves, leading to a catastrophic loss of lifting gas and a post-crash fire.",
+    "lessons_learned": "Political and promotional deadlines must never force a vehicle into flight testing before full aerodynamic certifications are met. New experimental materials require extensive real-world environmental stress testing.",
+    "time_cost_months": 72,
+    "financial_cost_usd": 65000000.00,
+    "tags": ["Aeronautics", "Material-Degradation", "Government-Funding", "Aviation-Safety"]
+  },
+  {
+    "title": "The Deepwater Horizon Blowout",
+    "domain": "Tech Startups",
+    "description": "The catastrophic failure of an ultra-deepwater offshore drilling rig's safety systems, resulting in an uncontrollable marine oil spill in the Gulf of Mexico.",
+    "root_cause": "Engineers used a single-string casing design with fewer centralizers than recommended, leading to a flawed, unstable cement job at the bottom of the wellbore. This allowed high-pressure methane gas to bypass the seal, travel up the drill pipe, bypass neglected gas detectors, and overwhelm the emergency blowout preventer (BOP) which had a faulty battery.",
+    "lessons_learned": "Redundant fail-safes must be independently tested and maintained at regular intervals. Industrial operations must establish absolute stop-work authority for crew members whenever pressure test data indicates an anomaly.",
+    "time_cost_months": 2,
+    "financial_cost_usd": 65000000000.00,
+    "tags": ["Petroleum-Engineering", "Redundancy-Failure", "Environmental-Disaster", "Risk-Management"]
+  },
+  {
+    "title": "The De Havilland Comet Metal Fatigue",
+    "domain": "Academia",
+    "description": "A pioneering commercial aviation research program featuring the world's first production commercial jetliner, halted after multiple sudden mid-air structural disintegrations.",
+    "root_cause": "The aircraft utilized sharp, square passenger windows and riveted construction methods instead of modern adhesive bonding. The repeated stress cycles of cabin pressurization concentrated intense stress at the corners of the square windows, generating rapid, microscopic metal fatigue cracks that caused explosive decompression.",
+    "lessons_learned": "Pressurized vessel designs must utilize rounded corners to naturally distribute stress concentrations. Aviation components subject to cyclic pressure variations require rigorous structural fatigue testing to failure during the prototyping phase.",
+    "time_cost_months": 60,
+    "financial_cost_usd": 500000000.00,
+    "tags": ["Aeronautical-Research", "Metal-Fatigue", "Stress-Concentration", "Aviation-Safety"]
+  },
+  {
+    "title": "Zillow Offers Algorithmic Buying",
+    "domain": "Tech Startups",
+    "description": "An automated real-estate flipping business that abruptly shut down after its proprietary machine-learning purchasing algorithm resulted in massive inventory losses.",
+    "root_cause": "The predictive pricing model suffered from severe AI overfitting. It was trained on historically stable housing data and failed to generalize to pandemic-induced market volatility, leading the system to overpay for thousands of homes while underestimating repair costs.",
+    "lessons_learned": "Machine learning models must include operational circuit breakers and human-in-the-loop validation when applied to volatile, capital-intensive markets. Overfitting to historical trends creates extreme systemic vulnerability during black swan events.",
+    "time_cost_months": 42,
+    "financial_cost_usd": 881000000.00,
+    "tags": ["AI-Overfitting", "Machine-Learning", "PropTech", "Algorithmic-Failure"]
+  },
+  {
+    "title": "CryptoKitties Network Congestion",
+    "domain": "Tech Startups",
+    "description": "A pioneering blockchain-based game featuring digital collectible assets that ground the host Ethereum network to a virtual standstill shortly after launch.",
+    "root_cause": "The game exposed critical blockchain scaling limits. Because early proof-of-work protocols processed transactions sequentially with rigid block-size caps, a sudden surge in user demand caused transaction fees to skyrocket and delayed processing times across the global ecosystem.",
+    "lessons_learned": "Decentralized applications must be architected with layer-2 scaling solutions, off-chain computation, or high-throughput consensus mechanisms before launching to mass consumer audiences.",
+    "time_cost_months": 3,
+    "financial_cost_usd": 10000000.00,
+    "tags": ["Blockchain-Scaling", "Network-Congestion", "Web3", "Infrastructure-Bottleneck"]
+  },
+  {
+    "title": "Google Glass Explorer Edition",
+    "domain": "Tech Startups",
+    "description": "An optical head-mounted display designed as a ubiquitous wearable computer, which was pulled from the consumer market due to severe societal and interface friction.",
+    "root_cause": "The product suffered from massive UX failures and hardware limitations. The battery life was extremely brief, the device overheated quickly, and the user interface lacked a clear daily utility. This was compounded by a social UX failure, as the unannounced built-in camera triggered intense public privacy anxieties.",
+    "lessons_learned": "Hardware wearables must solve friction points for both the user and the surrounding public. Technical capabilities should never outpace societal readiness or basic ergonomic comfort.",
+    "time_cost_months": 33,
+    "financial_cost_usd": 890000000.00,
+    "tags": ["UX-Failure", "Hardware-Limitations", "Wearables", "Consumer-Privacy"]
+  },
+  {
+    "title": "Juicero Connected Press",
+    "domain": "Tech Startups",
+    "description": "A highly funded, internet-connected kitchen appliance designed to press proprietary packs of diced fruits and vegetables into fresh juice.",
+    "root_cause": "An egregious example of over-engineering and hardware/IoT limitations. The custom-machined press was built with military-grade aluminum and complex wireless components, inflating the retail price to $700, only for journalists to discover that users could squeeze the packs faster and more effectively with their bare hands.",
+    "lessons_learned": "Connected hardware must deliver clear, additive value over manual alternatives. Over-engineering a simple physical process adds manufacturing cost, consumer friction, and structural point-of-failure risks without market benefit.",
+    "time_cost_months": 36,
+    "financial_cost_usd": 120000000.00,
+    "tags": ["Hardware-Limitations", "Over-Engineering", "IoT", "Market-Misfit"]
+  },
+  {
+    "title": "CNN+ Streaming Platform",
+    "domain": "Tech Startups",
+    "description": "A dedicated digital subscription video-on-demand service focusing on news and documentary programming, shut down just weeks after its high-profile launch.",
+    "root_cause": "A fatal subscriber UX failure and content-strategy misalignment. The app forced consumers to pay a separate monthly premium for conversational news content, failing to understand that digital audiences prefer receiving breaking news via instant feeds and aggregated video services rather than siloed paywalls.",
+    "lessons_learned": "Product UX and business models must align with organic consumer media consumption habits. Brand equity in traditional broadcast media does not automatically translate into standalone digital streaming demand.",
+    "time_cost_months": 1,
+    "financial_cost_usd": 300000000.00,
+    "tags": ["UX-Failure", "Digital-Media", "Streaming", "Market-Misalignment"]
+  },
+  {
+    "title": "Segway Personal Transporter",
+    "domain": "Tech Startups",
+    "description": "A self-balancing, two-wheeled personal electric vehicle heavily hyped to fundamentally reshape urban architecture and human transportation.",
+    "root_cause": "The vehicle faced insurmountable infrastructure and regulatory UX failures. The heavy hardware could not legally or safely operate on narrow pedestrian sidewalks, yet it lacked the speed to integrate into city street lanes, leaving it stranded without a viable physical operating environment.",
+    "lessons_learned": "Urban mobility innovations must be designed within the constraints of existing regulatory frameworks and municipal infrastructure. Technological novelty cannot override physical space allocation laws.",
+    "time_cost_months": 220,
+    "financial_cost_usd": 100000000.00,
+    "tags": ["Hardware-Limitations", "Urban-Mobility", "Regulatory-Barrier", "UX-Failure"]
+  },
+  {
+    "title": "Microsoft Tay Chatbot",
+    "domain": "Tech Startups",
+    "description": "An artificial intelligence chatterbot deployed on social media platforms, which had to be permanently deactivated less than 24 hours after launch.",
+    "root_cause": "The conversational model suffered from algorithmic exploitation and interactive overfitting. It relied on real-world, uncurated user interactions to train its language outputs dynamically, allowing coordinated online groups to rapidly feed it abusive, toxic data until the bot repeated the phrases back verbatim.",
+    "lessons_learned": "AI models operating in public spaces must utilize rigorous input-filtering safeguards, adversarial testing, and strict bounding parameters to prevent bad actors from manipulating online learning feedback loops.",
+    "time_cost_months": 1,
+    "financial_cost_usd": 5000000.00,
+    "tags": ["AI-Overfitting", "Algorithmic-Exploitation", "Social-Computing", "AI-Safety"]
+  },
+  {
+    "title": "Oxitec GM Mosquito Cayman Trials",
+    "domain": "Biotechnology",
+    "description": "An academic and corporate biological field release of genetically modified mosquitoes designed to suppress invasive, disease-carrying populations.",
+    "root_cause": "The project suffered from a distinct lab vs. field trial gap. While the tetracycline-dependent genetic switch worked perfectly in controlled, sterile laboratory environments, the wild release area contained low levels of environmental antibiotic run-off, which partially bypassed the lethality mechanism and altered local insect behavior.",
+    "lessons_learned": "Biological mitigation systems must be tested against real-world environmental contaminants and wild ecosystem baselines. Laboratory isolation models cannot completely simulate complex, open-world chemical and genetic feedback networks.",
+    "time_cost_months": 24,
+    "financial_cost_usd": 8000000.00,
+    "tags": ["Lab-vs-Field-Gap", "Genetic-Engineering", "Environmental-Testing", "Ecology"]
+  },
+  {
+    "title": "Sanofi Dengvaxia Vaccine Deployment",
+    "domain": "Biotechnology",
+    "description": "A massive public health vaccination campaign that was abruptly halted after clinical evidence revealed the drug increased the risk of severe disease in certain demographics.",
+    "root_cause": "A catastrophic lab vs. clinical trial gap regarding immunological behavior. Clinical trials failed to fully isolate the mechanism of antibody-dependent enhancement (ADE), meaning the vaccine acted like a primary infection for individuals who had never encountered dengue before, making subsequent wild infections much deadlier.",
+    "lessons_learned": "Clinical trial cohorts must comprehensively stratify past serostatus data before launching mass public inoculations. Complex biological dynamics like immune enhancement require highly granular, long-term observational phases.",
+    "time_cost_months": 24,
+    "financial_cost_usd": 1500000000.00,
+    "tags": ["Lab-vs-Field-Gap", "Immunology", "Public-Health", "Clinical-Trials"]
+  },
+  {
+    "title": "Targeted CRISPR Off-Target Mutations",
+    "domain": "Biotechnology",
+    "description": "The suspension of multiple academic pre-clinical gene therapy trials targeting hereditary blindness due to persistent cellular anomalies.",
+    "root_cause": "Severe CRISPR genetic side-effects driven by off-target genomic cleavage. The guide RNA sequences utilized in the academic lab matched unintended, highly similar structural sites elsewhere in the patient genomes, causing unintended DNA double-strand breaks and raising concerns regarding long-term oncogenic mutations.",
+    "lessons_learned": "Gene-editing platforms require advanced, high-fidelity computational sequence verification algorithms to minimize off-target cuts. Cellular therapies must validate structural genomic stability across the entire chromosome before human deployment.",
+    "time_cost_months": 18,
+    "financial_cost_usd": 45000000.00,
+    "tags": ["CRISPR-Side-Effects", "Genomics", "Pre-Clinical-Trials", "Molecular-Biology"]
+  },
+  {
+    "title": "SpaceX Falcon 1 Flight 1 Engine Fire",
+    "domain": "Tech Startups",
+    "description": "The maiden launch of a then-small startup's low-cost rocket, which failed less than half a minute after liftoff, destroying a student-built research satellite.",
+    "root_cause": "A single corroded B-nut on a main engine fuel line allowed high-pressure kerosene to leak and ignite. The small team relied on field-expedient maintenance at a remote tropical test site, exposing the aluminum nut to salty marine air for months without applying protective anti-corrosion grease.",
+    "lessons_learned": "Small startups operating under tight cash constraints must never cut corners on basic material science protocols. Aerospace components must utilize corrosion-resistant materials like stainless steel or receive strict environmental shielding in marine environments.",
+    "time_cost_months": 36,
+    "financial_cost_usd": 7000000.00,
+    "tags": ["Hardware-Limitations", "Material-Corrosion", "Aerospace", "Quality-Control"]
+  },
+  {
+    "title": "Skully AR Motorcycle Helmet",
+    "domain": "Tech Startups",
+    "description": "A small hardware startup that raised millions on crowdfunding to build an augmented-reality motorcycle helmet, only to collapse before shipping products to backers.",
+    "root_cause": "Severe hardware limitations and poor cash-flow management by a small team. Integrating a heads-up display, wide-angle rear camera, and processing unit inside a compact, impact-resistant helmet shell led to extreme battery drain and thermal overheating that the team lacked the engineering depth to resolve before funding dried up.",
+    "lessons_learned": "Crowdfunding campaigns run by small teams often vastly underestimate the capital and engineering cycles required for advanced hardware manufacturing. Startups must build fully functional thermal and battery prototypes before taking mass consumer orders.",
+    "time_cost_months": 36,
+    "financial_cost_usd": 15000000.00,
+    "tags": ["Hardware-Limitations", "Thermal-Overheating", "Crowdfunding", "Wearables"]
+  },
+  {
+    "title": "The LAION-5B Dataset Takedown",
+    "domain": "Tech Startups",
+    "description": "A small, open-source AI research collective's massive dataset that had to be temporarily taken offline globally by safety researchers.",
+    "root_cause": "An automated web-scraping script suffered from severe data-filtering gaps. The small team relied on automated CLIP embeddings to index billions of images from the open web but lacked the computing infrastructure and human-in-the-loop resources to audit the dataset, leading to the accidental inclusion of illegal and explicit content.",
+    "lessons_learned": "Small AI research teams and open-source groups must implement rigorous, multi-tiered algorithmic and human content-filtering pipelines when scraping public web data. Automated semantic sorting cannot substitute for legal and safety compliance frameworks.",
+    "time_cost_months": 12,
+    "financial_cost_usd": 50000.00,
+    "tags": ["AI-Overfitting", "Data-Filtering", "Open-Source-AI", "Compliance"]
+  },
+  {
+    "title": "Seralini GMO Rat Study Retraction",
+    "domain": "Biotechnology",
+    "description": "A small academic lab's highly publicized research paper claiming genetically modified maize caused massive tumors in rats, which was retracted due to severe statistical flaws.",
+    "root_cause": "A critical lab design flaw. The small research group used a strain of rats (Sprague-Dawley) that is highly prone to developing spontaneous tumors as they age, regardless of diet. The sample size per group was far too small to establish statistical significance, meaning the observed tumors were background noise misattributed to the GMO feed.",
+    "lessons_learned": "Small academic laboratories must use correct animal models and rigorous control groups to prevent confirmation bias. Small sample sizes cannot yield valid statistical power in long-term oncological trials.",
+    "time_cost_months": 24,
+    "financial_cost_usd": 3200000.00,
+    "tags": ["Lab-vs-Field-Gap", "Statistical-Error", "Academic-Research", "Peer-Review"]
+  },
+  {
+    "title": "St. Elizabeth Hospital Cold-Chain Spoilage",
+    "domain": "Biotechnology",
+    "description": "A localized public health failure where a small regional hospital clinic accidentally spoiled and administered compromised doses of vaccines.",
+    "root_cause": "A breakdown in clinical cold-chain logistics due to human error and low-tech infrastructure. An employee accidentally dislodged the power cord of a medical refrigerator while cleaning, and the small facility lacked an automated, battery-backed cellular temperature alarm to alert staff over the weekend.",
+    "lessons_learned": "Small-scale clinical operations handling sensitive biologics must mandate plug guards and redundant, internet-of-things (IoT) environmental monitoring systems that operate independently of grid power.",
+    "time_cost_months": 1,
+    "financial_cost_usd": 150000.00,
+    "tags": ["Clinical-Cold-Chain", "Logistics", "Human-Error", "Clinic-Safety"]
+  },
+  {
+    "title": "San Diego Smart Streetlights Backlash",
+    "domain": "Public Policy",
+    "description": "A municipal smart-city pilot project by a city department to upgrade streetlights into an intelligent data-gathering sensory network, which was defunded and deactivated.",
+    "root_cause": "A severe smart-city infrastructure policy and public trust failure. The small municipal project team integrated high-tech cameras and audio sensors into thousands of streetlights to track traffic, but failed to establish public data privacy policies, allowing local police to access the unencrypted data feeds without public disclosure.",
+    "lessons_learned": "Small-scale smart-city deployments must decouple civic data tracking (like vehicle counts) from invasive surveillance capabilities. Clear municipal data-governance policies must be codified before installing sensory hardware in public spaces.",
+    "time_cost_months": 48,
+    "financial_cost_usd": 30000000.00,
+    "tags": ["Smart-City-Infrastructure", "UX-Failure", "Data-Privacy", "Municipal-Policy"]
+  },
+  {
+    "title": "InBloom Student Data Platform",
+    "domain": "Public Policy",
+    "description": "A small nonprofit tech initiative funded by major grants to build a centralized, cloud-based data repository to personalize learning across multiple US school districts.",
+    "root_cause": "A fatal educational tech rollout UX and systemic design failure. The platform required schools to upload highly sensitive student data—including behavioral records, disciplinary actions, and test scores—to a single cloud vendor without building granular, user-controlled parental consent interfaces.",
+    "lessons_learned": "Educational technology infrastructure cannot be deployed via top-down mandates that bypass local community consent. Student data platforms must prioritize data minimization, strict encryption, and transparent parental access controls from day one.",
+    "time_cost_months": 15,
+    "financial_cost_usd": 100000000.00,
+    "tags": ["Educational-Tech-Rollout", "Data-Privacy", "Cloud-Security", "UX-Failure"]
+  }
+]

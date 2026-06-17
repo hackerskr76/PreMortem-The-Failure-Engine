@@ -1,6 +1,6 @@
 # 🛡️ PreMortem: The Open Innovation Failure Database
 
-> **"Sometimes you must hurt in order to know, fall in order to grow, lose in order to gain because life's greatest lessons are learned through pain."**
+> **"Learn from the mistakes of others. You can't live long enough to make them all yourself." - Lady Eleanor Roosevelt**
 
 ## 🌌 The Problem
 In academia, tech startups, and public policy, people only publish their successes. Failures are actively hidden. Because post-mortems are swept under the rug, researchers, students, and founders globally waste billions of dollars and millions of hours repeating the exact same predictable mistakes.

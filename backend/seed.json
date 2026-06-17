@@ -328,5 +328,276 @@
     "time_cost_months": 15,
     "financial_cost_usd": 100000000.00,
     "tags": ["Educational-Tech-Rollout", "Data-Privacy", "Cloud-Security", "UX-Failure"]
+  },
+  {
+    "title": "Boeing 737 MAX Grounding",
+    "domain": "Aerospace",
+    "description": "A next-generation commercial aircraft program that was globally grounded after two fatal crashes linked to its flight control automation system.",
+    "root_cause": "The MCAS flight-control software relied on input from a single angle-of-attack sensor and could repeatedly command the aircraft nose downward. Pilots were not adequately informed or trained on the system's behavior.",
+    "lessons_learned": "Safety-critical automation must never depend on a single sensor source. Operators need full transparency and training regarding automated decision-making systems.",
+    "time_cost_months": 24,
+    "financial_cost_usd": 20000000000.00,
+    "tags": ["Automation-Bias", "Human-Factors", "Aviation-Safety", "Single-Point-of-Failure"]
+  },
+  {
+    "title": "Denver International Airport Automated Baggage System",
+    "domain": "Infrastructure",
+    "description": "A highly ambitious automated baggage-handling system intended to revolutionize airport logistics but plagued by delays and operational failures.",
+    "root_cause": "Project planners attempted to automate an extremely complex logistics process all at once, resulting in software, hardware, and integration failures that exceeded available technological capabilities.",
+    "lessons_learned": "Large-scale automation should be introduced incrementally with extensive real-world testing. Complexity grows non-linearly in tightly coupled systems.",
+    "time_cost_months": 16,
+    "financial_cost_usd": 560000000.00,
+    "tags": ["Over-Automation", "Systems-Engineering", "Infrastructure", "Integration-Failure"]
+  },
+  {
+    "title": "Kodak's Digital Photography Decline",
+    "domain": "Tech Startups",
+    "description": "A photography giant that pioneered digital camera technology but failed to capitalize on it, eventually losing market dominance.",
+    "root_cause": "Leadership feared that digital photography would cannibalize its highly profitable film business and delayed aggressive investment in the emerging market.",
+    "lessons_learned": "Organizations must be willing to disrupt their own successful products before competitors do. Existing success can create strategic blindness.",
+    "time_cost_months": 180,
+    "financial_cost_usd": 5000000000.00,
+    "tags": ["Strategic-Blindness", "Innovation-Paradox", "Market-Shift", "Corporate-Strategy"]
+  },
+  {
+    "title": "New Coke Launch",
+    "domain": "Consumer Products",
+    "description": "A reformulation of Coca-Cola intended to compete with rivals that triggered widespread consumer backlash.",
+    "root_cause": "The company relied heavily on taste-test data while underestimating the emotional and cultural attachment consumers had to the original product.",
+    "lessons_learned": "Quantitative data alone cannot capture emotional brand value. Consumer psychology must be considered alongside market research.",
+    "time_cost_months": 3,
+    "financial_cost_usd": 30000000.00,
+    "tags": ["Consumer-Psychology", "Market-Research", "Brand-Identity", "Product-Strategy"]
+  },
+  {
+    "title": "Space Shuttle Challenger Disaster",
+    "domain": "Academia",
+    "description": "A NASA Space Shuttle mission that ended in catastrophe shortly after launch, resulting in the loss of seven crew members.",
+    "root_cause": "Engineers repeatedly warned management about O-ring seal failures in cold weather, but launch approval proceeded despite the risks.",
+    "lessons_learned": "Organizations need mechanisms that elevate expert concerns above schedule pressure and political objectives.",
+    "time_cost_months": 32,
+    "financial_cost_usd": 3200000000.00,
+    "tags": ["Ignored-Warnings", "Risk-Management", "Aerospace", "Organizational-Failure"]
+  },
+  {
+    "title": "Chernobyl Reactor Accident",
+    "domain": "Public Policy",
+    "description": "A catastrophic nuclear power plant accident during a safety systems test that caused widespread radioactive contamination.",
+    "root_cause": "Operators disabled multiple safety mechanisms while conducting an improperly designed experiment on a reactor with known design flaws.",
+    "lessons_learned": "Safety systems should never be bypassed without robust safeguards and independent oversight. High-risk testing requires strict operational boundaries.",
+    "time_cost_months": 1,
+    "financial_cost_usd": 235000000000.00,
+    "tags": ["Unsafe-Testing", "Nuclear-Safety", "Human-Error", "Risk-Management"]
+  },
+  {
+    "title": "Google Flu Trends",
+    "domain": "Artificial Intelligence",
+    "description": "A machine-learning initiative that attempted to predict flu outbreaks using internet search data.",
+    "root_cause": "The model overfit historical correlations in search behavior and failed to adapt when user search patterns changed over time.",
+    "lessons_learned": "Large datasets do not eliminate the need for validation. Predictive systems require continuous monitoring for model drift.",
+    "time_cost_months": 72,
+    "financial_cost_usd": 50000000.00,
+    "tags": ["Model-Drift", "Big-Data", "Prediction-Failure", "Machine-Learning"]
+  },
+  {
+    "title": "Sony Betamax Format War",
+    "domain": "Consumer Electronics",
+    "description": "A technically advanced video recording format that lost market dominance to the VHS ecosystem.",
+    "root_cause": "Sony prioritized technical superiority while competitors focused on licensing, content partnerships, and ecosystem growth.",
+    "lessons_learned": "Winning platforms depend on ecosystems and adoption, not just technical excellence.",
+    "time_cost_months": 120,
+    "financial_cost_usd": 1000000000.00,
+    "tags": ["Ecosystem-Failure", "Market-Dynamics", "Platform-Wars", "Business-Strategy"]
+  },
+  {
+    "title": "Amazon Fire Phone",
+    "domain": "Tech Startups",
+    "description": "A premium smartphone initiative by Amazon that failed to gain significant market adoption.",
+    "root_cause": "The product focused on novel features such as 3D interface effects instead of addressing meaningful user problems or differentiating itself effectively.",
+    "lessons_learned": "Product innovation should solve customer pain points rather than simply showcasing technical novelty.",
+    "time_cost_months": 13,
+    "financial_cost_usd": 170000000.00,
+    "tags": ["Feature-Creep", "Product-Strategy", "Consumer-Tech", "Market-Misalignment"]
+  },
+  {
+    "title": "Digg v4 Redesign",
+    "domain": "Tech Startups",
+    "description": "A major redesign of the Digg social news platform that triggered mass user migration to competitors.",
+    "root_cause": "The redesign ignored the behavior and expectations of the platform's core community while prioritizing publisher relationships.",
+    "lessons_learned": "Platform evolution must respect the needs of existing communities. Significant changes require gradual testing and feedback loops.",
+    "time_cost_months": 2,
+    "financial_cost_usd": 45000000.00,
+    "tags": ["Community-Management", "Platform-Governance", "User-Backlash", "Product-Strategy"]
+  },
+  {
+    "title": "Yahoo Declines Google Acquisition",
+    "domain": "Tech Startups",
+    "description": "A missed strategic opportunity where Yahoo failed to acquire Google during its early growth stage.",
+    "root_cause": "Leadership underestimated the long-term value of search technology and internet advertising.",
+    "lessons_learned": "Opportunity costs can become some of the largest strategic failures. Organizations must recognize emerging platform shifts early.",
+    "time_cost_months": 60,
+    "financial_cost_usd": 100000000000.00,
+    "tags": ["Missed-Opportunity", "Strategic-Failure", "Technology-Forecasting", "Corporate-Strategy"]
+  },
+  {
+    "title": "Axie Infinity Economic Collapse",
+    "domain": "Tech Startups",
+    "description": "A blockchain gaming ecosystem that experienced severe economic instability after explosive growth.",
+    "root_cause": "The in-game economy depended heavily on constant user growth and speculative demand rather than sustainable value generation.",
+    "lessons_learned": "Economic systems should remain viable even when growth slows. Incentive structures must be stress-tested under declining participation.",
+    "time_cost_months": 18,
+    "financial_cost_usd": 600000000.00,
+    "tags": ["Economic-Design", "Incentive-Failure", "Web3", "Sustainability"]
+  },
+  {
+    "title": "CrowdStrike Falcon Sensor Outage",
+    "domain": "Software Engineering",
+    "description": "A faulty software update that caused millions of Windows systems worldwide to crash simultaneously.",
+    "root_cause": "A defective update was distributed globally without sufficient staged deployment, validation, or rollback protections.",
+    "lessons_learned": "Mission-critical software updates require progressive rollouts, automatic rollback mechanisms, and extensive pre-production testing.",
+    "time_cost_months": 1,
+    "financial_cost_usd": 10000000000.00,
+    "tags": ["Update-Failure", "Systemic-Risk", "DevOps", "Global-Outage"]
+  },
+  {
+    "title": "OceanGate Titan Submersible Implosion",
+    "domain": "Engineering",
+    "description": "An experimental deep-sea tourism submersible that catastrophically failed during a dive to the Titanic wreck site.",
+    "root_cause": "Repeated engineering and safety concerns from industry experts were dismissed while pursuing rapid innovation outside established certification processes.",
+    "lessons_learned": "Independent certification and engineering review processes exist for a reason. Innovation should complement safety standards, not replace them.",
+    "time_cost_months": 60,
+    "financial_cost_usd": 50000000.00,
+    "tags": ["Safety-Culture", "Ignored-Experts", "Engineering-Governance", "Risk-Management"]
+  },
+  {
+    "title": "FBI Virtual Case File (VCF)",
+    "domain": "Government IT",
+    "description": "A major FBI modernization effort intended to digitize case management that was abandoned after years of development.",
+    "root_cause": "Project requirements changed continuously throughout development, creating a system that no longer matched operational needs. Poor stakeholder coordination and weak project governance prevented stabilization.",
+    "lessons_learned": "Large software systems require controlled requirements management and incremental delivery rather than attempting to satisfy constantly shifting objectives.",
+    "time_cost_months": 48,
+    "financial_cost_usd": 170000000.00,
+    "tags": ["Requirements-Churn", "Government", "Project-Management", "Software-Engineering"]
+  },
+  {
+    "title": "NHS National Programme for IT",
+    "domain": "Healthcare IT",
+    "description": "An ambitious attempt to create a centralized electronic healthcare infrastructure across England.",
+    "root_cause": "The program attempted to impose a single architecture across highly diverse healthcare organizations with different workflows and local requirements.",
+    "lessons_learned": "National-scale digital transformation requires local flexibility and stakeholder ownership rather than purely top-down execution.",
+    "time_cost_months": 120,
+    "financial_cost_usd": 15000000000.00,
+    "tags": ["Centralization-Failure", "Digital-Transformation", "Healthcare", "Government"]
+  },
+  {
+    "title": "FoxMeyer Drugs ERP Collapse",
+    "domain": "Enterprise Software",
+    "description": "A pharmaceutical distributor that collapsed after implementing a large-scale ERP and warehouse automation system.",
+    "root_cause": "The company simultaneously introduced new software, new logistics processes, and new automation technologies, overwhelming operational capacity.",
+    "lessons_learned": "Organizations should avoid introducing multiple transformational changes simultaneously.",
+    "time_cost_months": 24,
+    "financial_cost_usd": 500000000.00,
+    "tags": ["Change-Management", "ERP-Failure", "Automation", "Operational-Risk"]
+  },
+  {
+    "title": "eBay Acquisition of Skype",
+    "domain": "Corporate Strategy",
+    "description": "An acquisition intended to improve buyer-seller communication that failed to create meaningful business value.",
+    "root_cause": "Leadership assumed strategic synergies that never materialized because customers did not use voice communication as expected.",
+    "lessons_learned": "Acquisitions should be validated through user behavior rather than theoretical strategic alignment.",
+    "time_cost_months": 48,
+    "financial_cost_usd": 1400000000.00,
+    "tags": ["Mergers-And-Acquisitions", "Synergy-Failure", "Corporate-Strategy"]
+  },
+  {
+    "title": "Iridium Satellite Network",
+    "domain": "Telecommunications",
+    "description": "A global satellite phone network that entered bankruptcy shortly after launch.",
+    "root_cause": "Rapid improvements in terrestrial mobile networks reduced demand for expensive satellite communication services.",
+    "lessons_learned": "Technological achievement alone does not guarantee market demand.",
+    "time_cost_months": 132,
+    "financial_cost_usd": 5000000000.00,
+    "tags": ["Market-Timing", "Telecommunications", "Technology-Adoption"]
+  },
+  {
+    "title": "IBM OS/2",
+    "domain": "Software",
+    "description": "An advanced operating system that failed to achieve mass adoption despite technical strengths.",
+    "root_cause": "Software developers concentrated on Windows, creating an ecosystem advantage that OS/2 could not overcome.",
+    "lessons_learned": "Developer ecosystems are often more important than product quality.",
+    "time_cost_months": 120,
+    "financial_cost_usd": 3000000000.00,
+    "tags": ["Developer-Ecosystem", "Platform-Wars", "Software"]
+  },
+  {
+    "title": "London Millennium Bridge",
+    "domain": "Civil Engineering",
+    "description": "A pedestrian bridge that developed severe lateral oscillations immediately after opening.",
+    "root_cause": "Engineers failed to anticipate synchronized pedestrian movement that amplified structural oscillations.",
+    "lessons_learned": "Complex systems can exhibit emergent behavior that is not visible in isolated component analysis.",
+    "time_cost_months": 24,
+    "financial_cost_usd": 18000000.00,
+    "tags": ["Emergent-Behavior", "Civil-Engineering", "Structural-Dynamics"]
+  },
+  {
+    "title": "Intel Pentium FDIV Bug",
+    "domain": "Hardware",
+    "description": "A floating-point division bug found in Intel's Pentium processor.",
+    "root_cause": "Missing entries in a lookup table caused rare but significant calculation errors.",
+    "lessons_learned": "Small defects in foundational systems can propagate enormous downstream impact.",
+    "time_cost_months": 6,
+    "financial_cost_usd": 475000000.00,
+    "tags": ["Quality-Assurance", "Microprocessors", "Verification-Failure"]
+  },
+  {
+    "title": "WeWork IPO Collapse",
+    "domain": "Tech Startups",
+    "description": "A high-growth office-sharing company whose planned IPO exposed severe governance and financial concerns.",
+    "root_cause": "Weak corporate governance structures allowed excessive executive control, conflicts of interest, and unrealistic growth assumptions.",
+    "lessons_learned": "Governance failures can destroy value even when customer demand exists.",
+    "time_cost_months": 12,
+    "financial_cost_usd": 40000000000.00,
+    "tags": ["Governance-Failure", "Corporate-Strategy", "Startup-Management"]
+  },
+  {
+    "title": "Netscape Navigator",
+    "domain": "Software",
+    "description": "The dominant early web browser that lost market leadership during the browser wars.",
+    "root_cause": "Microsoft leveraged operating system distribution advantages to bundle Internet Explorer directly into Windows.",
+    "lessons_learned": "Control of a platform can outweigh product superiority.",
+    "time_cost_months": 84,
+    "financial_cost_usd": 1000000000.00,
+    "tags": ["Platform-Dependency", "Competition", "Software"]
+  },
+  {
+    "title": "BlackBerry Smartphone Decline",
+    "domain": "Consumer Electronics",
+    "description": "A dominant mobile platform that rapidly lost market share after the introduction of touchscreen smartphones.",
+    "root_cause": "Leadership focused on preserving existing enterprise advantages while underestimating consumer demand shifts.",
+    "lessons_learned": "Past success can create organizational resistance to disruptive change.",
+    "time_cost_months": 84,
+    "financial_cost_usd": 8000000000.00,
+    "tags": ["Success-Trap", "Innovation-Paradox", "Consumer-Tech"]
+  },
+  {
+    "title": "Airbus A380 Program",
+    "domain": "Aerospace",
+    "description": "The world's largest passenger aircraft program that failed to achieve expected commercial demand.",
+    "root_cause": "Planners assumed future air travel would concentrate through mega-hubs, while airlines increasingly preferred direct point-to-point routes.",
+    "lessons_learned": "Forecasting future behavior incorrectly can undermine even technically successful products.",
+    "time_cost_months": 240,
+    "financial_cost_usd": 25000000000.00,
+    "tags": ["Forecasting-Error", "Aerospace", "Market-Timing"]
+  },
+  {
+    "title": "Google Stadia",
+    "domain": "Tech Startups",
+    "description": "A cloud gaming platform intended to eliminate the need for dedicated gaming hardware.",
+    "root_cause": "Consumer internet infrastructure, content licensing, and developer support were not mature enough to support widespread adoption.",
+    "lessons_learned": "Products dependent on ecosystem readiness can fail despite strong technical execution.",
+    "time_cost_months": 36,
+    "financial_cost_usd": 1000000000.00,
+    "tags": ["Infrastructure-Readiness", "Cloud-Computing", "Ecosystem-Failure"]
   }
+
 ]

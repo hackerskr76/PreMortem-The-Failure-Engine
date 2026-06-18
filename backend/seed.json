@@ -71,7 +71,7 @@
   },
   {
     "title": "Ariane 5 Flight 501",
-    "domain": "Academia",
+    "domain": "Aerospace",
     "description": "The maiden flight of the European Space Agency's Ariane 5 rocket, which self-destructed 37 seconds after launch during scientific payload deployment.",
     "root_cause": "Software code from the older Ariane 4 rocket was reused without being re-tested for the new flight path parameters. A 64-bit floating-point value tracking horizontal velocity was converted into a 16-bit signed integer, causing an arithmetic overflow that crashed the guidance system and triggered self-destruction.",
     "lessons_learned": "Software code cannot be blindly reused across different hardware iterations without full integration testing. Exception handling routines must explicitly cover variable overflow vulnerabilities in mission-critical systems.",
@@ -101,7 +101,7 @@
   },
   {
     "title": "Therac-25 Radiation Overdoses",
-    "domain": "Academia",
+    "domain": "Medical Devices",
     "description": "A computer-controlled radiation therapy machine that severely overdosed and killed multiple cancer patients during academic hospital trials and clinical use.",
     "root_cause": "The manufacturer removed physical, electromechanical safety interlocks, relying entirely on software safety. A subtle race condition software bug occurred when fast typists entered commands, causing the high-energy electron beam to fire directly without the necessary beam-softening target in place.",
     "lessons_learned": "Critical safety systems must always feature physical, hardware-based interlocks. Software should never be trusted as the sole point of failure for human life, and concurrent software engineering must be rigorously audited for race conditions.",
@@ -131,7 +131,7 @@
   },
   {
     "title": "The R101 Airship Crash",
-    "domain": "Academia",
+    "domain": "Aerospace",
     "description": "A British government-backed scientific research initiative to build an empire-spanning luxury commercial airship fleet, which crashed on its maiden overseas voyage.",
     "root_cause": "The airship was extended in length to increase lift, which compromised its structural rigidity. The outer fabric cover was treated with a highly flammable chemical compound that degraded over time, and the vessel flew into a severe storm with untested gas valves, leading to a catastrophic loss of lifting gas and a post-crash fire.",
     "lessons_learned": "Political and promotional deadlines must never force a vehicle into flight testing before full aerodynamic certifications are met. New experimental materials require extensive real-world environmental stress testing.",
@@ -371,7 +371,7 @@
   },
   {
     "title": "Space Shuttle Challenger Disaster",
-    "domain": "Academia",
+    "domain": "Aerospace",
     "description": "A NASA Space Shuttle mission that ended in catastrophe shortly after launch, resulting in the loss of seven crew members.",
     "root_cause": "Engineers repeatedly warned management about O-ring seal failures in cold weather, but launch approval proceeded despite the risks.",
     "lessons_learned": "Organizations need mechanisms that elevate expert concerns above schedule pressure and political objectives.",
@@ -551,7 +551,7 @@
   },
   {
     "title": "WeWork IPO Collapse",
-    "domain": "Tech Startups",
+    "domain": "Business",
     "description": "A high-growth office-sharing company whose planned IPO exposed severe governance and financial concerns.",
     "root_cause": "Weak corporate governance structures allowed excessive executive control, conflicts of interest, and unrealistic growth assumptions.",
     "lessons_learned": "Governance failures can destroy value even when customer demand exists.",
@@ -598,6 +598,106 @@
     "time_cost_months": 36,
     "financial_cost_usd": 1000000000.00,
     "tags": ["Infrastructure-Readiness", "Cloud-Computing", "Ecosystem-Failure"]
+  },
+  {
+    "title": "Ford Pinto Fuel Tank Controversy",
+    "domain": "Automotive",
+    "description": "A compact car whose fuel tank design became associated with deadly fire risks during rear-end collisions.",
+    "root_cause": "Cost-benefit analyses prioritized production costs and legal exposure over correcting a known safety defect.",
+    "lessons_learned": "Financial optimization should never override fundamental safety requirements.",
+    "time_cost_months": 60,
+    "financial_cost_usd": 125000000.00,
+    "tags": ["Safety-Culture", "Cost-Cutting", "Automotive", "Ethics"]
+  },
+  {
+    "title": "Volkswagen Dieselgate",
+    "domain": "Automotive",
+    "description": "A global emissions scandal involving software designed to manipulate environmental testing results.",
+    "root_cause": "Pressure to meet performance and regulatory goals led engineers to implement software that detected testing conditions and altered vehicle behavior.",
+    "lessons_learned": "Short-term performance goals should not incentivize deception or regulatory circumvention.",
+    "time_cost_months": 96,
+    "financial_cost_usd": 33000000000.00,
+    "tags": ["Fraud", "Compliance-Failure", "Automotive", "Corporate-Culture"]
+  },
+  {
+    "title": "DeLorean Motor Company Collapse",
+    "domain": "Automotive",
+    "description": "An ambitious sports car startup that failed despite strong public attention and innovative design.",
+    "root_cause": "Production delays, quality issues, financial instability, and unrealistic growth expectations undermined the business.",
+    "lessons_learned": "Product excitement cannot compensate for weak manufacturing and operational execution.",
+    "time_cost_months": 84,
+    "financial_cost_usd": 175000000.00,
+    "tags": ["Execution-Failure", "Manufacturing", "Automotive", "Startup"]
+  },
+  {
+    "title": "Sears Decline",
+    "domain": "Business",
+    "description": "A dominant retail giant that lost relevance and market share over several decades.",
+    "root_cause": "Leadership focused heavily on financial engineering and cost reduction while underinvesting in customer experience and modernization.",
+    "lessons_learned": "Cost cutting cannot replace innovation and customer value creation.",
+    "time_cost_months": 240,
+    "financial_cost_usd": 10000000000.00,
+    "tags": ["Retail", "Strategic-Blindness", "Customer-Neglect", "Business"]
+  },
+  {
+    "title": "Blockbuster vs Netflix",
+    "domain": "Business",
+    "description": "A dominant video rental company that failed to adapt to digital distribution models.",
+    "root_cause": "Leadership underestimated streaming technology and protected existing revenue streams instead of embracing disruption.",
+    "lessons_learned": "Organizations must be willing to cannibalize existing products before competitors do.",
+    "time_cost_months": 120,
+    "financial_cost_usd": 5000000000.00,
+    "tags": ["Disruption", "Innovation-Paradox", "Business-Strategy"]
+  },
+  {
+    "title": "Long-Term Capital Management Collapse",
+    "domain": "Finance",
+    "description": "A hedge fund run by renowned financial experts that nearly destabilized global markets.",
+    "root_cause": "Risk models assumed market relationships that broke down during extreme conditions while leverage magnified losses.",
+    "lessons_learned": "Models are only as good as their assumptions. Rare events occur more often than expected.",
+    "time_cost_months": 48,
+    "financial_cost_usd": 4600000000.00,
+    "tags": ["Model-Risk", "Finance", "Leverage", "Black-Swan"]
+  },
+  {
+    "title": "Barings Bank Collapse",
+    "domain": "Finance",
+    "description": "One of Britain's oldest banks collapsed after unauthorized trading activities generated massive losses.",
+    "root_cause": "The same individual controlled both trading operations and oversight functions, eliminating effective checks and balances.",
+    "lessons_learned": "Critical financial controls require separation of duties and independent oversight.",
+    "time_cost_months": 12,
+    "financial_cost_usd": 1400000000.00,
+    "tags": ["Internal-Control-Failure", "Finance", "Governance", "Fraud"]
+  },
+  {
+    "title": "Target Canada Expansion Failure",
+    "domain": "Retail",
+    "description": "A major international retail expansion that ended with a complete withdrawal from the Canadian market.",
+    "root_cause": "Rapid expansion exposed weaknesses in inventory systems, supply chains, and market understanding.",
+    "lessons_learned": "Scaling too quickly can magnify operational weaknesses.",
+    "time_cost_months": 24,
+    "financial_cost_usd": 5400000000.00,
+    "tags": ["Scaling-Failure", "Supply-Chain", "Retail", "Expansion"]
+  },
+  {
+    "title": "Concorde Commercial Retirement",
+    "domain": "Commercial Aviation",
+    "description": "A supersonic passenger aircraft program that struggled to achieve long-term commercial viability.",
+    "root_cause": "Operating costs, maintenance complexity, limited capacity, and environmental concerns outweighed its speed advantages.",
+    "lessons_learned": "Technical achievement alone does not guarantee sustainable economics.",
+    "time_cost_months": 300,
+    "financial_cost_usd": 12000000000.00,
+    "tags": ["Commercial-Viability", "Aviation", "Economics", "Product-Market-Fit"]
+  },
+  {
+    "title": "New South China Mall",
+    "domain": "Commercial Real Estate",
+    "description": "One of the world's largest shopping malls that remained largely empty for years after opening.",
+    "root_cause": "Developers prioritized scale and ambition without validating local demand and consumer behavior.",
+    "lessons_learned": "Demand should be proven before large-scale investment decisions are made.",
+    "time_cost_months": 120,
+    "financial_cost_usd": 1300000000.00,
+    "tags": ["Demand-Miscalculation", "Real-Estate", "Market-Research", "Commercial"]
   }
 
 ]

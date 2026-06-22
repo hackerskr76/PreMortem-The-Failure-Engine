@@ -9,15 +9,11 @@ In academia, tech startups, and public policy, people only publish their success
 **PreMortem** is a structured, searchable knowledge base of failed experiments, dead projects, and retracted policies. 
 By typing a new project hypothesis into PreMortem, innovators receive an **Instant AI Risk Assessment** derived from historical failures, helping them pivot *before* spending a single dollar on development.
 
----
-
 ## 🛠️ Tech Stack & Architecture
 * **Frontend:** React.js, Tailwind CSS, Vite
 * **Backend:** Python, FastAPI, Uvicorn
 * **AI Engine:** Semantic analysis and report generation via LLM API
 * **Database:** Structured JSON Engine / Vector-ready relational schema
-
----
 
 ## 🚀 Key Features
 1. **The Pre-Mortem Engine:** Type an idea, instantly receive a calculated risk report based on historical failures.
